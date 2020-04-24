@@ -8,6 +8,7 @@ edition = "2018"
 description = "Utility functions to manipulate chrono dates"
 homepage = "https://github.com/liquidscorpio/chrono-utils"
 repository = "https://github.com/liquidscorpio/chrono-utils"
+documentation = "https://docs.rs/chrono-utilities/"
 keywords = ["date", "time"]
 categories = ["date-and-time"]
 readme = "README.md"
