@@ -5,6 +5,7 @@
 
 ----
 <br>
+
 Provides utility functions to manipulate [chrono](https://github.com/chronotope/chrono/) dates.
 Only [NaiveDate](https://docs.rs/chrono/0.4.11/chrono/naive/struct.NaiveDate.html) is
 supported as of now. Support for naive and timezone aware DateTime coming soon.
