@@ -1,4 +1,7 @@
 ## Chrono Utilities
+![Rust](https://github.com/liquidscorpio/chrono-utils/workflows/Rust/badge.svg?branch=master)
+![crates.io](https://img.shields.io/crates/v/chrono-utilities.svg)
+![docs.rs](https://docs.rs/chrono-utilities/badge.svg)
 
 **Documentation**: https://docs.rs/chrono-utilities/  
 **Current Version**: 0.0.0-alpha1
