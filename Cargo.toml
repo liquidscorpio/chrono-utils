@@ -1,6 +1,6 @@
 [package]
 name = "chrono-utils"
-version = "0.0alpha0"
+version = "0.0.0-alpha1"
 authors = [
     "liquidscorpio <liquidscorpio@users.noreply.github.com>"
 ]
