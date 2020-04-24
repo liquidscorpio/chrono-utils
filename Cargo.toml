@@ -1,11 +1,22 @@
 [package]
 name = "chrono-utils"
-version = "0.1.0"
-authors = ["tintin"]
+version = "0.0alpha0"
+authors = [
+    "liquidscorpio <liquidscorpio@users.noreply.github.com>"
+]
 edition = "2018"
+description = "Utility functions to manipulate chrono dates"
+homepage = "https://github.com/liquidscorpio/chrono-utils"
+repository = "https://github.com/liquidscorpio/chrono-utils"
+keywords = ["date", "time"]
+categories = ["date-and-time"]
+readme = "README.md"
+license = "MIT/Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
 chrono = "0.4.11"
 time = "0.1.43"
+
+[lib]
+name = "chrono_utils"

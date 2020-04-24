@@ -12,6 +12,8 @@ like `start_of_pred_iso8601_week()` which provides the date on which the previou
 starts. Such functions are provided for week, month and year.   
 
 
+<br>
+ 
 ### Feature Matrix
 | Feature | Status |
 | -------------- | --------- |
