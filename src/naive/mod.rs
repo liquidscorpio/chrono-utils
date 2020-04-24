@@ -78,7 +78,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d1 = NaiveDate::from_ymd(1996, 8, 14);
     /// assert_eq!(d1.is_leap_year(), true);
@@ -103,7 +103,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d1 = NaiveDate::from_ymd(1996, 2, 23);
     /// assert_eq!(d1.last_day_of_month(), 29);
@@ -127,7 +127,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d = NaiveDate::from_ymd(2019, 3, 31);
     /// assert_eq!(d.start_of_year().unwrap(), NaiveDate::from_ymd(2019, 1, 1));
@@ -144,7 +144,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d = NaiveDate::from_ymd(2019, 3, 31);
     /// assert_eq!(d.end_of_year().unwrap(), NaiveDate::from_ymd(2019, 12, 31));
@@ -161,7 +161,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d = NaiveDate::from_ymd(2019, 9, 13);
     /// assert_eq!(d.start_of_month().unwrap(), NaiveDate::from_ymd(2019, 9, 1));
@@ -178,7 +178,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d1 = NaiveDate::from_ymd(1996, 2, 23);
     /// assert_eq!(d1.end_of_month().unwrap(), NaiveDate::from_ymd(1996, 2, 29));
@@ -198,7 +198,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d1 = NaiveDate::from_ymd(2020, 1, 2);
     /// assert_eq!(d1.start_of_iso8601_week().unwrap(), NaiveDate::from_ymd(2019, 12, 30));
@@ -220,7 +220,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d1 = NaiveDate::from_ymd(2020, 1, 2);
     /// assert_eq!(d1.end_of_iso8601_week().unwrap(), NaiveDate::from_ymd(2020, 1, 5));
@@ -242,7 +242,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d = NaiveDate::from_ymd(2019, 3, 31);
     /// assert_eq!(d.start_of_pred_year().unwrap(), NaiveDate::from_ymd(2018, 1, 1));
@@ -262,7 +262,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d = NaiveDate::from_ymd(2019, 3, 31);
     /// assert_eq!(d.end_of_pred_year().unwrap(), NaiveDate::from_ymd(2018, 12, 31));
@@ -282,7 +282,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d1 = NaiveDate::from_ymd(2019, 1, 4);
     /// assert_eq!(d1.start_of_pred_month().unwrap(), NaiveDate::from_ymd(2018, 12, 1));
@@ -315,7 +315,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d1 = NaiveDate::from_ymd(2019, 1, 4);
     /// assert_eq!(d1.end_of_pred_month().unwrap(), NaiveDate::from_ymd(2018, 12, 31));
@@ -337,7 +337,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d1 = NaiveDate::from_ymd(2019, 1, 4);
     /// assert_eq!(d1.start_of_pred_iso8601_week().unwrap(), NaiveDate::from_ymd(2018, 12, 24));
@@ -359,7 +359,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d1 = NaiveDate::from_ymd(2019, 1, 4);
     /// assert_eq!(d1.end_of_pred_iso8601_week().unwrap(), NaiveDate::from_ymd(2018, 12, 30));
@@ -380,7 +380,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d = NaiveDate::from_ymd(2019, 3, 31);
     /// assert_eq!(d.start_of_succ_year().unwrap(), NaiveDate::from_ymd(2020, 1, 1));
@@ -399,7 +399,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d = NaiveDate::from_ymd(2019, 3, 31);
     /// assert_eq!(d.end_of_succ_year().unwrap(), NaiveDate::from_ymd(2020, 12, 31));
@@ -418,7 +418,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d1 = NaiveDate::from_ymd(2019, 12, 12);
     /// assert_eq!(d1.start_of_succ_month().unwrap(), NaiveDate::from_ymd(2020, 1, 1));
@@ -451,7 +451,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d1 = NaiveDate::from_ymd(2019, 1, 4);
     /// assert_eq!(d1.end_of_pred_month().unwrap(), NaiveDate::from_ymd(2018, 12, 31));
@@ -473,7 +473,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d1 = NaiveDate::from_ymd(2020, 1, 4);
     /// assert_eq!(d1.start_of_succ_iso8601_week().unwrap(), NaiveDate::from_ymd(2020, 1, 6));
@@ -495,7 +495,7 @@ impl DateTransitions for NaiveDate {
     ///
     /// ~~~~
     /// use chrono::NaiveDate;
-    /// use chrono_utils::naive::DateTransitions;
+    /// use chrono_utilities::naive::DateTransitions;
     ///
     /// let d1 = NaiveDate::from_ymd(2019, 1, 4);
     /// assert_eq!(d1.end_of_succ_iso8601_week().unwrap(), NaiveDate::from_ymd(2019, 1, 13));

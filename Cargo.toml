@@ -1,5 +1,5 @@
 [package]
-name = "chrono-utils"
+name = "chrono-utilities"
 version = "0.0.0-alpha1"
 authors = [
     "liquidscorpio <liquidscorpio@users.noreply.github.com>"
@@ -19,4 +19,4 @@ chrono = "0.4.11"
 time = "0.1.43"
 
 [lib]
-name = "chrono_utils"
+name = "chrono_utilities"
