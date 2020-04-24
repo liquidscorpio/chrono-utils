@@ -1,3 +1,4 @@
+//! Utility structs and traits related to chrono's [NaiveDate](https://docs.rs/chrono/0.4.11/chrono/naive/struct.NaiveDate.html)
 use crate::oldtime::Duration as OldDuration;
 use chrono::{Datelike, NaiveDate};
 

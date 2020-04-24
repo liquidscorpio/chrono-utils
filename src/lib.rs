@@ -1,3 +1,14 @@
+//! Provides utility functions to manipulate [chrono](https://github.com/chronotope/chrono/) dates.
+//! Only [NaiveDate](https://docs.rs/chrono/0.4.11/chrono/naive/struct.NaiveDate.html) is
+//! supported as of now. Support for naive and timezone aware DateTime coming soon.
+//!
+//! The crate provides the following:
+//!
+//! **Transition APIs**  
+//! Transition a chrono struct into a future or previous date using standardised methods
+//! like `start_of_pred_iso8601_week()` which provides the date on which the previous week
+//! starts. Such functions are provided for week, month and year.
+
 extern crate chrono;
 extern crate time as oldtime;
 
