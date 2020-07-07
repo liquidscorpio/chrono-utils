@@ -1,10 +1,11 @@
 ## Chrono Utilities
+![Rust](https://github.com/liquidscorpio/chrono-utils/workflows/Rust/badge.svg?branch=master)
+![crates.io](https://img.shields.io/crates/v/chrono-utilities.svg)
+![docs.rs](https://docs.rs/chrono-utilities/badge.svg)
 
 **Documentation**: https://docs.rs/chrono-utilities/  
 **Current Version**: 0.0.0-alpha1
 
-----
-<br>
 
 Provides utility functions to manipulate [chrono](https://github.com/chronotope/chrono/) dates.
 Only [NaiveDate](https://docs.rs/chrono/0.4.11/chrono/naive/struct.NaiveDate.html) is
@@ -20,8 +21,14 @@ starts. Such functions are provided for week, month and year. View the [docs](ht
 API and more examples.
 
 
-<br>
- 
+### Installation
+In your `Cargo.toml` add the following:
+```toml
+[dependencies]
+chrono-utilities = "0.0.0-alpha1"
+```
+
+
 ### Feature Matrix
 | Feature | Status |
 | -------------- | --------- |
