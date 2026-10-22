@@ -4,7 +4,7 @@
 ![docs.rs](https://docs.rs/chrono-utilities/badge.svg)
 
 **Documentation**: https://docs.rs/chrono-utilities/  
-**Current Version**: 0.0.0-alpha1
+**Current Version**: 0.0.1
 
 
 Provides utility functions to manipulate [chrono](https://github.com/chronotope/chrono/) dates.
