@@ -1,6 +1,5 @@
 //! Utility structs and traits related to chrono's [NaiveDate](https://docs.rs/chrono/0.4.11/chrono/naive/struct.NaiveDate.html)
-use crate::oldtime::Duration as OldDuration;
-use chrono::{Datelike, NaiveDate};
+use chrono::{Datelike, NaiveDate, TimeDelta};
 
 /// Value at index `i` is the minimum number of days in the month `i+1`
 static MONTH_MIN_DAYS: [u8; 12] = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
@@ -138,7 +137,7 @@ impl DateTransitions for NaiveDate {
         NaiveDate::from_ymd_opt(self.year(), 1, 1)
     }
 
-    /// Returns the year end date for the current date
+    /// Returns the year-end date for the current date
     ///
     /// # Example
     ///
@@ -210,7 +209,7 @@ impl DateTransitions for NaiveDate {
         // TODO: Original chrono PR using private APIs
         // let days = self.of().weekday().num_days_from_monday() as i64;
         let days = self.weekday().num_days_from_monday() as i64;
-        self.checked_sub_signed(OldDuration::days(days))
+        self.checked_sub_signed(TimeDelta::days(days))
     }
 
     /// Returns the end of the week for the current date. Uses the ISO 8601 standard for calculating
@@ -233,7 +232,7 @@ impl DateTransitions for NaiveDate {
         // let days = 6 - self.of().weekday().num_days_from_monday() as i64;
         let max_days = 6;
         let days = max_days - self.weekday().num_days_from_monday() as i64;
-        self.checked_add_signed(OldDuration::days(days))
+        self.checked_add_signed(TimeDelta::days(days))
     }
 
     /// Returns the start of preceding year relative to the current date
@@ -347,7 +346,7 @@ impl DateTransitions for NaiveDate {
     /// assert_eq!(d3.start_of_pred_iso8601_week().unwrap(), NaiveDate::from_ymd(1996, 2, 19));
     fn start_of_pred_iso8601_week(&self) -> Option<Self> {
         match self.start_of_iso8601_week() {
-            Some(week_start) => Some(week_start - OldDuration::days(7)),
+            Some(week_start) => Some(week_start - TimeDelta::days(7)),
             None => None,
         }
     }
@@ -369,7 +368,7 @@ impl DateTransitions for NaiveDate {
     /// assert_eq!(d3.end_of_pred_iso8601_week().unwrap(), NaiveDate::from_ymd(1996, 2, 25));
     fn end_of_pred_iso8601_week(&self) -> Option<Self> {
         match self.start_of_iso8601_week() {
-            Some(week_start) => Some(week_start - OldDuration::days(1)),
+            Some(week_start) => Some(week_start - TimeDelta::days(1)),
             None => None,
         }
     }
@@ -483,7 +482,7 @@ impl DateTransitions for NaiveDate {
     /// assert_eq!(d3.start_of_succ_iso8601_week().unwrap(), NaiveDate::from_ymd(1996, 3, 4));
     fn start_of_succ_iso8601_week(&self) -> Option<Self> {
         match self.start_of_iso8601_week() {
-            Some(week_start) => Some(week_start + OldDuration::days(7)),
+            Some(week_start) => Some(week_start + TimeDelta::days(7)),
             None => None,
         }
     }
@@ -505,7 +504,7 @@ impl DateTransitions for NaiveDate {
     /// assert_eq!(d3.end_of_succ_iso8601_week().unwrap(), NaiveDate::from_ymd(2006, 1, 1));
     fn end_of_succ_iso8601_week(&self) -> Option<Self> {
         match self.start_of_succ_iso8601_week() {
-            Some(week_start) => Some(week_start + OldDuration::days(6)),
+            Some(week_start) => Some(week_start + TimeDelta::days(6)),
             None => None,
         }
     }
